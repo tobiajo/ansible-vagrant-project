@@ -1,0 +1,18 @@
+cluster:
+  default:
+    box: "coreos-stable"
+    box_url: "http://stable.release.core-os.net/amd64-usr/current/coreos_production_vagrant.json"
+  groups:
+    api:
+      nodes: 2
+    persister:
+      nodes: 2
+
+virtualbox:
+  groups:
+    api:
+      memory: 256
+      cpus: 1
+    persister:
+      memory: 256
+      cpus: 1
