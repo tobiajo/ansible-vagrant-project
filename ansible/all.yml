@@ -1,0 +1,7 @@
+- hosts: api
+  roles:
+    - api
+
+- hosts: persister
+  roles:
+    - persister

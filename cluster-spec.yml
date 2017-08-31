@@ -1,12 +1,16 @@
 cluster:
   default:
-    box: "coreos-stable"
-    box_url: "http://stable.release.core-os.net/amd64-usr/current/coreos_production_vagrant.json"
+    box: centos/7
   groups:
     api:
       nodes: 2
+      offset: 10
     persister:
       nodes: 2
+      offset: 20
+  network:
+    ip:
+      172.17.4.
 
 virtualbox:
   groups:
